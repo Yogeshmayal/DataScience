@@ -1,0 +1,75 @@
+---
+title: "Titanic Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+
+Titanic<-read.csv("titanic.csv",stringsAsFactors = FALSE)
+Titanic$sex<-as.factor(Titanic$sex)
+Titanic$pclass<-as.factor(Titanic$pclass)
+Titanic$survived<-as.factor(Titanic$survived)
+Titanic$embarked<-as.factor(Titanic$embarked) 
+prop.table(table(Titanic$survived))
+```
+
+## Column {data-width=340}
+
+### Survival Count
+
+```{r}
+ggplot(Titanic,aes(x=survived))+
+    theme_classic()+
+    geom_bar()+
+    labs(y="Passenger count",
+            title = "Titanic Survival Count")
+```
+
+## Column {data-width=330}
+
+
+### Survival by gender
+
+```{r}
+ggplot(Titanic,aes(x=sex,fill=survived))+
+  theme_light()+
+  geom_bar()+
+  labs(y="Passenger count",
+       title = "Titanic Survival Count by gender")
+```
+
+### Survival based on Class
+
+```{r}
+ggplot(Titanic,aes(x=pclass,fill=survived))+
+  theme_light()+
+  geom_bar()+
+  labs(y="Passenger count",
+       title = "Titanic Survival Count by class")
+```
+
+## Column {data-width=330}
+
+### Survival by gender
+```{r}
+
+ggplot(Titanic,aes(x=sex,fill=survived))+
+theme_light()+
+facet_grid(~pclass)+
+  geom_bar()+
+  labs(y="Passenger count",
+       title = "Titanic Survival Count by class and gender")
+```
+
+### Pie Chart
+```{r}
+ggplot(Titanic, aes( x ="", fill = survived ) ) +
+  geom_bar( position="fill" ) +
+  facet_grid(~pclass) +
+  coord_polar( theta = "y" )
+```

@@ -1,0 +1,20 @@
+Assignment-1
+
+Topic : Web scraping and data cleaning
+Title : Perform Web scraping of item reviews of an e-commerce website
+Eg : Scrap iphone product reviews in Amazon website
+Time : 1 week
+Intructions: 
+1. Students are requested to submit the assignments through their github profiles
+2. Students need to submit their github profile id to the Coordinators
+3. All the assignments will be evaluated through their github accounts
+4. Students should explain the entire procedure of scraping a website through their Readme file
+5. Students should upload the r file of the project and the extracted data set (Xlsx, csv file)
+6. Once the data is collected, students should clean their data and submit the cleaned data
+7. The entire directory in R should have three files
+	R file (Webscraping + Data cleaning)
+	Raw extracted data (csv file)
+	Cleaned data (csv file)
+8. Github directory example (Technical Training / Assignment-1 / Web scraping / )
+
+********************************ALL THE BEST*************************************************

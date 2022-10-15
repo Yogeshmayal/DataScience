@@ -1,0 +1,22 @@
+Assignment-2
+
+Topic : Data Visualization and Dashboard
+Title : Visualization and building Data Dashboard using clean data
+The idea is to use the cleaned dataset that was scraped by the students in the previous session and create
+a dashboard using Flex dashboard 
+
+Eg : Using the cleaned data of amazon.in website that was scrapped by you plot various graphs and build a flex dashboard
+Time : 1 week
+Instructions: 
+1. Students are requested to submit the assignments through their github profiles
+2. Students need to submit their github profile id to the Coordinators
+3. All the assignments will be evaluated through their github accounts
+4. Students should explain the entire procedure of visualization and dashboard through their Readme file
+5. Students should upload the r file of the project and the extracted data set (Xlsx, csv file)
+6. Once the data is visualized, students should build a dashboard using their data that was scrapped and cleaned in assignment 1.
+7. The entire directory in R should have three files
+	R file (Visualization + Dashboard)
+	Cleaned data (csv file)
+8. Github directory example (Technical Training / Assignment-2 / Data Visualization and Dashboard / )
+
+********************************ALL THE BEST*************************************************
